@@ -1,9 +1,9 @@
 variable "aws_region" {
-    type    = string
-    default = "eu-north-1"
+  type    = string
+  default = "eu-north-1"
 }
 
 variable "project_name" {
-    type    = string
-    default = "serverless-llm-pipeline"
+  type    = string
+  default = "serverless-llm-pipeline"
 }
