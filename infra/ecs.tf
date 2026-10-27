@@ -88,4 +88,10 @@ resource "aws_ecs_service" "app" {
     security_groups  = [aws_security_group.app.id]
     assign_public_ip = true
   }
+
+  service_registries {
+    registry_arn   = aws_service_discovery_service.app.arn
+    container_name = "llm-api"
+    container_port = 8000
+  }
 }

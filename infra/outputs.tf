@@ -13,3 +13,7 @@ output "ecs_service_name" {
 output "log_group_name" {
   value = aws_cloudwatch_log_group.app.name
 }
+
+output "cloudmap_service_id" {
+  value = aws_service_discovery_service.app.id
+}
